@@ -1,0 +1,72 @@
+﻿
+.dot {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.buttons {
+    background-color: mediumseagreen;
+}
+
+    .buttons ul {
+        list-style: none;
+    }
+
+    .buttons li {
+        position: relative;
+        margin: 0px 15px 0px 15px;
+        padding: 20px 0px 10px 0px;
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .buttons button {
+        background: none;
+        color: white;
+        border: none;
+    }
+
+        .buttons button:focus {
+            outline: none;
+        }
+
+
+        .buttons button::before {
+            content: "";
+            display: block;
+            height: 0%;
+            background-color: aliceblue;
+            opacity: 0.5;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            transition: all ease-in-out 250ms;
+        }
+
+        .buttons button:hover::before {
+            height: 100%;
+        }
+
+    .buttons select {
+        background: none;
+        color: white;
+        border: none;
+        
+    }
+
+    .buttons select option {
+        background-color: mediumseagreen;
+    }
+
+    .selectitem {
+        background-color: MediumSeaGreen;
+    }
+
+.edge-weight {
+    border: none;
+    background: none;
+    width: 50px;
+}
